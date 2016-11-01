@@ -23,9 +23,16 @@ $(function() {
     'https://cdn.hyperdev.com/a68f6f68-288a-4966-bde7-5abf8116270e%2Fout-14.png',
     'https://cdn.hyperdev.com/a68f6f68-288a-4966-bde7-5abf8116270e%2Fout-15.png'
   ];
+  var font_families = [
+    'Times, "Times New Roman", Georgia, serif',
+    'Georgia, Verdana, Arial, Helvetica, sans-serif',
+    '"Lucida Console", Courier, monospace',
+    'cursive',
+    'fantasy'
+  ];
   
-  var randomImage = function() {
-    return backgroundurls[Math.floor(Math.random()*backgroundurls.length)];
+  var randomFromArray = function(array) {
+    return array[Math.floor(Math.random()*array.length)];
   };
   
   $('.sloganword').keypress(function(e) {
@@ -47,9 +54,10 @@ $(function() {
     _this.text(_this.text().replace(/(^[\s.,]*)|([\s.,]*$)/g, ''));
     if (!document.querySelector('.sloganword:empty')) {
       $('.sloganroot').addClass('rendered')
-      .css('background-image', 'url(' + randomImage() + ')');
+      .css('background-image', 'url(' + randomFromArray(backgroundurls) + ')')
+      .css('font-family', randomFromArray(font_families));
     }
   }).focus(function(event) {
-    $('.sloganroot').removeClass('rendered');
+    $('.sloganroot').removeClass('rendered').css('font-family', '');
   });
 });
