@@ -35,6 +35,25 @@ $(function() {
     return array[Math.floor(Math.random()*array.length)];
   };
   
+  // http://stackoverflow.com/questions/11128130/select-text-in-javascript
+  function selectText(element) {
+    var doc = document;
+    var text = element;
+    var range;
+
+    if (doc.body.createTextRange) { // ms
+        range = doc.body.createTextRange();
+        range.moveToElementText(text);
+        range.select();
+    } else if (window.getSelection) { // moz, opera, webkit
+        var selection = window.getSelection();            
+        range = doc.createRange();
+        range.selectNodeContents(text);
+        selection.removeAllRanges();
+        selection.addRange(range);
+    }
+  }
+  
   $('.sloganword').keypress(function(e) {
     if (e.which === 13) {
       e.preventDefault();
@@ -55,9 +74,10 @@ $(function() {
     if (!document.querySelector('.sloganword:empty')) {
       $('.sloganroot').addClass('rendered')
       .css('font-family', randomFromArray(font_families));
-      $('.backgroundfade').css('background-image', 'url(' + randomFromArray(backgroundurls) + ')')
+      $('.backgroundfade').css('background-image', 'url(' + randomFromArray(backgroundurls) + ')');
     }
   }).focus(function(event) {
+    selectText(this);
     $('.sloganroot').removeClass('rendered').css('font-family', '');
   });
 });
