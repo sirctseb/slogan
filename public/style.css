@@ -79,7 +79,7 @@ p {
 
 .sloganroot.rendered .first {
   min-width: 0;
-  font-size: 8em;
+  font-size: 6em;
   background-color: rgba(255,255,255,0);
   
   -webkit-transition-property: min-width, font-size, background-color;
@@ -99,7 +99,7 @@ p {
   margin-left: 0.3em;
   top: 0em;
   min-width: 0;
-  font-size: 8em;
+  font-size: 6em;
   background-color: rgba(255,255,255,0);
   
   -webkit-transition-property: margin-left, top, min-width, font-size, background-color;
@@ -122,7 +122,7 @@ p {
   margin-left: 0.3em;
   top: 0em;
   min-width: 0;
-  font-size: 8em;
+  font-size: 6em;
   background-color: rgba(255,255,255,0);
   
   -webkit-transition-property: margin-left, top, min-width, font-size, background-color;
@@ -200,6 +200,12 @@ p {
   -webkit-transition-property: opacity;
   -webkit-transition-duration: 200ms;
   -webkit-transition-function: cubic-bezier(.22,1.91,.69,.75);
+}
+.feedback {
+  display: none;
+}
+.sloganroot.rendered+.feedback {
+  display: block;
 }
 
 button {
