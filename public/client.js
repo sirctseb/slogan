@@ -5,6 +5,19 @@
 // add other scripts at the bottom of index.html
 
 $(function() {
+  $('.sloganword').keypress(function(e) {
+    if (e.which === 13) {
+      e.preventDefault();
+      var _this = $(this);
+      if (_this.hasClass('first')) {
+        $('.second').focus();
+      } else if(_this.hasClass('second')) {
+        $('.third').focus();
+      } else {
+        _this.blur();
+      }
+    }
+  });
   $('.sloganword').blur(function (event) {
     // trim whitespace and periods
     var _this = $(this);
