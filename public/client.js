@@ -54,8 +54,8 @@ $(function() {
     _this.text(_this.text().replace(/(^[\s.,]*)|([\s.,]*$)/g, ''));
     if (!document.querySelector('.sloganword:empty')) {
       $('.sloganroot').addClass('rendered')
-      .css('background-image', 'url(' + randomFromArray(backgroundurls) + ')')
       .css('font-family', randomFromArray(font_families));
+      $('.backgroundfade').css('background-image', 'url(' + randomFromArray(backgroundurls) + ')')
     }
   }).focus(function(event) {
     $('.sloganroot').removeClass('rendered').css('font-family', '');
