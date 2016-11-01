@@ -1,0 +1,181 @@
+/* styles */
+/* called by your view template */
+
+/* You might want to try something fancier: */
+/* less: http://lesscss.org/ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 25px;
+  text-align: center;
+}
+
+h1 {
+  font-weight: bold;
+  color: pink;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  text-align: justify;
+  text-align-last: center;
+}
+
+.sloganword {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+}
+
+.sloganroot:not(.rendered) .sloganword {
+  background-color: white;
+  border: 1px solid #CCCCCC;
+  border-radius: 3px;
+  padding: 0.3em;
+
+  -webkit-transition-property: border, border-radius, background-color, padding;
+  -webkit-transition-duration: 2000ms;
+  -webkit-transition-function: ease-in;
+}
+.sloganroot:not(.rendered) .sloganword:not(:last-child) {
+  margin-bottom: 0.5em;
+}
+
+.sloganroot.rendered .sloganword {
+  background-color: red;
+  border: none;
+  padding: 0;
+
+  -webkit-transition-property: border, background-color, padding;
+  -webkit-transition-duration: 2000ms;
+  -webkit-transition-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.sloganroot.rendered .first {
+  min-width: 0;
+  font-size: 8em;
+  
+  -webkit-transition-property: min-width, font-size;
+  -webkit-transition-duration: 2000ms;
+  -webkit-transition-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+.sloganroot:not(.rendered) .first {
+  min-width: 10em;
+  font-size: 1em;
+  
+  -webkit-transition-property: min-width, font-size;
+  -webkit-transition-duration: 2000ms;
+  -webkit-transition-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+.sloganroot.rendered .second {
+  margin-left: 0;
+  top: 0em;
+  min-width: 0;
+  font-size: 8em;
+  
+  -webkit-transition-property: margin-left, top, min-width, font-size;
+  -webkit-transition-duration: 2000ms;
+  -webkit-transition-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+.sloganroot:not(.rendered) .second {
+  margin-left: -10.3em;
+  top: 2em;
+  min-width: 10em;
+  font-size: 1em;
+  
+  -webkit-transition-property: margin-left, top, min-width, font-size;
+  -webkit-transition-duration: 2000ms;
+  -webkit-transition-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.sloganroot.rendered .third {
+  margin-left: 0;
+  top: 0em;
+  min-width: 0;
+  font-size: 8em;
+  
+  -webkit-transition-property: margin-left, top, min-width, font-size;
+  -webkit-transition-duration: 2000ms;
+  -webkit-transition-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.sloganroot:not(.rendered) .third {
+  margin-left: -10.3em;
+  top: 4em;
+  min-width: 10em;
+  font-size: 1em;
+  
+  -webkit-transition-property: margin-left, top, min-width, font-size;
+  -webkit-transition-duration: 2000ms;
+  -webkit-transition-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.sloganroot.rendered .sloganword:after {
+  content: '.';
+}
+
+.first:empty:after {
+  content:"Adverb or adjective";
+  color: #A0A0A0;
+}
+.second:empty:after {
+  content:"Adjective or noun";
+  color: #A0A0A0;
+}
+.third:empty:after {
+  content:"Noun";
+  color: #A0A0A0;
+}
+
+.sloganroot {
+  margin-bottom: 25px;
+  padding: 15px;
+  display: inline-block;
+  width: 100%;
+  border-radius: 3px;
+}
+
+button {
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: yellow;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid lightgrey;
+}
+
+footer > a {
+  color: #BBBBBB;
+}
+
+.nicejob {
+  text-decoration: line-through;
+}
