@@ -1,4 +1,4 @@
-Welcome to the HyperDev BETA
+https://cdn.hyperdev.com/a68f6f68-288a-4966-bde7-5abf8116270e/out-1.jpgWelcome to the HyperDev BETA
 ============================
 
 Click `"Show"` in the header to see your app live. Updates to your code will instantly deploy and update live.
