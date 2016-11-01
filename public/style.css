@@ -45,7 +45,7 @@ p {
   padding: 0.3em;
 
   -webkit-transition-property: border, border-radius, background-color, padding;
-  -webkit-transition-duration: 2000ms;
+  -webkit-transition-duration: 200ms;
   -webkit-transition-function: ease-in;
 }
 .sloganroot:not(.rendered) .sloganword:not(:last-child) {
@@ -57,8 +57,8 @@ p {
   padding: 0;
 
   -webkit-transition-property: border, background-color, padding;
-  -webkit-transition-duration: 2000ms;
-  -webkit-transition-function: cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transition-duration: 200ms;
+  -webkit-transition-function: cubic-bezier(.22,1.91,.69,.75);
 }
 
 .sloganroot.rendered .first {
@@ -66,16 +66,16 @@ p {
   font-size: 8em;
   
   -webkit-transition-property: min-width, font-size;
-  -webkit-transition-duration: 2000ms;
-  -webkit-transition-function: cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transition-duration: 200ms;
+  -webkit-transition-function: cubic-bezier(.22,1.91,.69,.75);
 }
 .sloganroot:not(.rendered) .first {
   min-width: 10em;
   font-size: 1em;
   
   -webkit-transition-property: min-width, font-size;
-  -webkit-transition-duration: 2000ms;
-  -webkit-transition-function: cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transition-duration: 200ms;
+  -webkit-transition-function: cubic-bezier(.22,1.91,.69,.75);
 }
 .sloganroot.rendered .second {
   margin-left: 0;
@@ -84,8 +84,8 @@ p {
   font-size: 8em;
   
   -webkit-transition-property: margin-left, top, min-width, font-size;
-  -webkit-transition-duration: 2000ms;
-  -webkit-transition-function: cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transition-duration: 200ms;
+  -webkit-transition-function: cubic-bezier(.22,1.91,.69,.75);
 }
 .sloganroot:not(.rendered) .second {
   margin-left: -10.3em;
@@ -94,8 +94,8 @@ p {
   font-size: 1em;
   
   -webkit-transition-property: margin-left, top, min-width, font-size;
-  -webkit-transition-duration: 2000ms;
-  -webkit-transition-function: cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transition-duration: 200ms;
+  -webkit-transition-function: cubic-bezier(.22,1.91,.69,.75);
 }
 
 .sloganroot.rendered .third {
@@ -105,8 +105,8 @@ p {
   font-size: 8em;
   
   -webkit-transition-property: margin-left, top, min-width, font-size;
-  -webkit-transition-duration: 2000ms;
-  -webkit-transition-function: cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transition-duration: 200ms;
+  -webkit-transition-function: cubic-bezier(.22,1.91,.69,.75);
 }
 
 .sloganroot:not(.rendered) .third {
@@ -116,8 +116,8 @@ p {
   font-size: 1em;
   
   -webkit-transition-property: margin-left, top, min-width, font-size;
-  -webkit-transition-duration: 2000ms;
-  -webkit-transition-function: cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transition-duration: 200ms;
+  -webkit-transition-function: cubic-bezier(.22,1.91,.69,.75);
 }
 
 .sloganroot.rendered .sloganword:after {
@@ -150,16 +150,16 @@ p {
   background-size: cover;
   
   -webkit-transition-property: background, background-size;
-  -webkit-transition-duration: 2000ms;
-  -webkit-transition-function: cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transition-duration: 200ms;
+  -webkit-transition-function: cubic-bezier(.22,1.91,.69,.75);
 }
 .sloganroot.rendered {
   background: url(https://cdn.hyperdev.com/a68f6f68-288a-4966-bde7-5abf8116270e%2Fout-1.jpg);
   background-size: cover;
   
   -webkit-transition-property: background, background-size;
-  -webkit-transition-duration: 2000ms;
-  -webkit-transition-function: cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transition-duration: 200ms;
+  -webkit-transition-function: cubic-bezier(.22,1.91,.69,.75);
 }
 .sloganroot .backgroundfade {
   background: white;
@@ -172,15 +172,15 @@ p {
   opacity: 1;
   
   -webkit-transition-property: opacity;
-  -webkit-transition-duration: 2000ms;
-  -webkit-transition-function: cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transition-duration: 200ms;
+  -webkit-transition-function: cubic-bezier(.22,1.91,.69,.75);
 }
 .sloganroot.rendered .backgroundfade {
   opacity: 0;
   
   -webkit-transition-property: opacity;
-  -webkit-transition-duration: 2000ms;
-  -webkit-transition-function: cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transition-duration: 200ms;
+  -webkit-transition-function: cubic-bezier(.22,1.91,.69,.75);
 }
 
 button {

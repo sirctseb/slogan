@@ -6,6 +6,9 @@
 
 $(function() {
   $('.sloganword').blur(function (event) {
+    // trim whitespace and periods
+    var _this = $(this);
+    _this.text(_this.text().replace(/(^[\s.,]*)|([\s.,]*$)/g, ''));
     if (!document.querySelector('.sloganword:empty')) {
       $('.sloganroot').addClass('rendered');
     }
