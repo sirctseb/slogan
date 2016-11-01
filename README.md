@@ -1,0 +1,2 @@
+# slogan
+Slogan generator
