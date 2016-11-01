@@ -5,6 +5,29 @@
 // add other scripts at the bottom of index.html
 
 $(function() {
+  var backgroundurls = [
+    'https://cdn.hyperdev.com/a68f6f68-288a-4966-bde7-5abf8116270e%2Fout-1.jpg',
+    'https://cdn.hyperdev.com/a68f6f68-288a-4966-bde7-5abf8116270e%2Fout-2.jpg',
+    'https://cdn.hyperdev.com/a68f6f68-288a-4966-bde7-5abf8116270e%2Fout-3.jpg',
+    'https://cdn.hyperdev.com/a68f6f68-288a-4966-bde7-5abf8116270e%2Fout-4.jpg',
+    'https://cdn.hyperdev.com/a68f6f68-288a-4966-bde7-5abf8116270e%2Fout-4.png',
+    'https://cdn.hyperdev.com/a68f6f68-288a-4966-bde7-5abf8116270e%2Fout-5.jpg',
+    'https://cdn.hyperdev.com/a68f6f68-288a-4966-bde7-5abf8116270e%2Fout-6.jpg',
+    'https://cdn.hyperdev.com/a68f6f68-288a-4966-bde7-5abf8116270e%2Fout-7.jpg',
+    'https://cdn.hyperdev.com/a68f6f68-288a-4966-bde7-5abf8116270e%2Fout-8.jpg',
+    'https://cdn.hyperdev.com/a68f6f68-288a-4966-bde7-5abf8116270e%2Fout-9.jpg',
+    'https://cdn.hyperdev.com/a68f6f68-288a-4966-bde7-5abf8116270e%2Fout-10.png',
+    'https://cdn.hyperdev.com/a68f6f68-288a-4966-bde7-5abf8116270e%2Fout-11.jpg',
+    'https://cdn.hyperdev.com/a68f6f68-288a-4966-bde7-5abf8116270e%2Fout-12.jpg',
+    'https://cdn.hyperdev.com/a68f6f68-288a-4966-bde7-5abf8116270e%2Fout-13.jpg',
+    'https://cdn.hyperdev.com/a68f6f68-288a-4966-bde7-5abf8116270e%2Fout-14.png',
+    'https://cdn.hyperdev.com/a68f6f68-288a-4966-bde7-5abf8116270e%2Fout-15.png'
+  ];
+  
+  var randomImage = function() {
+    return backgroundurls[Math.floor(Math.random()*backgroundurls.length)];
+  };
+  
   $('.sloganword').keypress(function(e) {
     if (e.which === 13) {
       e.preventDefault();
@@ -23,10 +46,10 @@ $(function() {
     var _this = $(this);
     _this.text(_this.text().replace(/(^[\s.,]*)|([\s.,]*$)/g, ''));
     if (!document.querySelector('.sloganword:empty')) {
-      $('.sloganroot').addClass('rendered');
+      $('.sloganroot').addClass('rendered')
+      .css('background-image', 'url(' + randomImage() + ')');
     }
   }).focus(function(event) {
     $('.sloganroot').removeClass('rendered');
   });
-
 });
