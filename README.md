@@ -1,2 +1,1 @@
-# slogan
-Slogan generator
+Gimmick punctuated slogan generator

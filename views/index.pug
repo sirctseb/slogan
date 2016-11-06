@@ -1,0 +1,45 @@
+doctype html
+html(lang="en")
+    head
+        title Punctuated. Triplet. Solutions.
+        meta(name="description" content="A Professional Slogan Design Service")
+        link(id="favicon" rel="icon" href="https://hyperdev.com/favicon-app.ico" type="image/x-icon")
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet" href="/style.css")
+    body
+        header
+            h1
+                span.hellip
+                |Punctuated. Slogan. Solutions.
+                span.hellip
+
+        main
+            div.frontmatter
+                p
+                    span.bold It's time
+                    = '\n'
+                    |to create the slogan that brings your business to the next level.
+                p.
+                    Every company but yours has figured out that a good slogan must consist of three words separated by periods.
+                    Don't break the bank by outsourcing your slogan creation to experienced professionals.
+                    Just give us an idea of the goods or services you provide and let our advanced marketing
+                    optimization algorithms generate the perfect slogan for you!
+                p Let's start by brainstorming, let's say, three words:
+            div.sloganroot
+                span.first.sloganword(contenteditable="true") #{first}
+                = '\n'
+                span.second.sloganword(contenteditable="true") #{second}
+                = '\n'
+                span.third.sloganword(contenteditable="true") #{third}
+                div.backgroundfade
+            div.feedback There you go! Enjoy your future business success!
+
+        footer
+            a(href="https://hyperdev.com") Remix this in HyperDev
+
+        script(src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous")
+        script(src="/client.js")
